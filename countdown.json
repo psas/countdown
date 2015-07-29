@@ -1,3 +1,10 @@
+---
+layout: none
+---
 {
-    "launch": 1465146000.0
+    "launch": {{ site.data.launch.launch }},
+    "certainty": "{{ site.data.launch.certainty }}",
+    "name": "{{ site.data.launch.name }}",
+    "link": "{{ site.data.launch.link }}",
+    "patch": "{{ site.data.launch.patch }}"
 }
