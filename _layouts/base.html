@@ -9,8 +9,11 @@
     <title>PSAS Countdown</title>
     <meta name="description" content="Time until next PSAS Launch">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+
+    {% assign lvl = page.url | append:'X' | split:'/' | size %}
+    {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <link rel="stylesheet" href="{{ relative }}css/normalize.min.css">
+    <link rel="stylesheet" href="{{ relative }}css/main.css">
   </head>
   <body>
     <div class="header-container">

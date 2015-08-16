@@ -22,3 +22,5 @@ layout: base
 </div>
 
 Next PSAS launch: <a href="{{ site.data.launch.link }}">{{ site.data.launch.name }}</a>
+
+[Countdown API Documentation](docs)
