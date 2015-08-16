@@ -2,7 +2,7 @@
 layout: none
 ---
 {
-    "launch": {{ site.data.launch.launch }},
+    "launch": {{ site.data.launch.launch | date: '%s' }},
     "certainty": "{{ site.data.launch.certainty }}",
     "name": "{{ site.data.launch.name }}",
     "link": "{{ site.data.launch.link }}",
