@@ -18,6 +18,13 @@ layout: base
       {% endcase %}
     {{ site.data.launch.launch | date: '%Y'}}</h1>
   <h2 class="warning">Launch Date TBD</h2>
+{% elsif site.data.launch.certainty == "NET" %}
+  <h3>No Earlier Than:</h3>
+  <h1>{{ site.data.launch.launch | date: "%A, %B %-d, %Y" }}</h1>
+{% elsif site.data.launch.certainty == "Date" %}
+  <h1>Morning of {{ site.data.launch.launch | date: "%A, %B %-d, %Y" }}</h1>
+{% else %}
+  <h1>{{ site.data.launch.launch | date: "%H:%M %P %A, %B %-d, %Y" }}</h1>
 {% endif %}
 </div>
 
