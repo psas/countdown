@@ -1,9 +1,9 @@
 ---
-layout: base
-title: Countdown API Docs
+layout: page
+title: Countdown API
+description: "How to use our launch countdown API"
 ---
 
-# Countdown API
 
 ## JSON Endpoint:
 

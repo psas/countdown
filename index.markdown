@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: page
+title: Launch Countdown
 ---
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 

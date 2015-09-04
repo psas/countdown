@@ -1,2 +1,30 @@
-markdown: kramdown
-timezone: America/Los_Angeles
+title:        PSAS
+tagline:      Rockets
+description:  Rockets
+canonical:    http://psas.pdx.edu
+url:          ''
+
+
+# Owner/author information
+owner:
+  name:           Portland State Aerpospace Society
+  avatar:         avatar.png
+  bio:            "Rockets"
+  email:          info@psas.pdx.edu
+  twitter:        pdxaerospace
+  github:         psas
+  location:       "Portland, Ore"
+
+
+exclude: ['Makefile', 'README.markdown']
+timezone:    America/Los_Angeles
+markdown:    kramdown
+kramdown: 
+  toc_levels: "2,3"
+
+links:
+  - title: Launch Countdown
+    url: /countdown/
+  - title: Countdown Docs
+    url: /countdown/docs/
+
