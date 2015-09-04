@@ -16,7 +16,7 @@ owner:
   location:       "Portland, Ore"
 
 
-exclude: ['Makefile', 'README.markdown']
+exclude: ['Makefile', 'README.markdown', 'LICENSE']
 timezone:    America/Los_Angeles
 markdown:    kramdown
 kramdown: 
