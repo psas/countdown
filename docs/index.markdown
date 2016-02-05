@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Countdown API
-description: "How to use our launch countdown API"
+description: "How to use the PSAS launch countdown API"
 ---
 
 
 ## JSON Endpoint:
 
-<div style="background:#eee;padding:10px;font-size:1.2em;" markdown="1">
-  <https://psas.github.io/countdown/countdown.json>
+<div class="code" markdown="1">
+  <https://psas.pdx.edu/countdown/countdown.json>
 </div>
 
 ## Fields:
@@ -23,6 +23,19 @@ description: "How to use our launch countdown API"
 
 ## Example:
 
+**Example request:**
+
+    GET /countdown/countdown.json HTTP/1.1
+    Host: psas.pdx.edu
+    Accept: application/json, text/javascript
+
+
+**Example response:**
+
+    HTTP/1.1 200 OK
+    Access-Control-Allow-Origin:*
+    Content-Type:application/json
+
     {
         "launch": 1464800400,
         "certainty": "TBD",
@@ -30,8 +43,6 @@ description: "How to use our launch countdown API"
         "link": "https://github.com/psas/Launch-13",
         "patch": ""
     }
-
-
 
 
 [1]: https://en.wikipedia.org/wiki/Unix_time
