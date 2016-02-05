@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Launch Countdown
+description: "Time until our next rocket launch:"
 ---
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
 <div>
 
 {% if site.data.launch.certainty == "TBD" %}
-  <h1>
+  <h2>{{ site.data.launch.name }}:
     {% assign m = site.data.launch.launch | date: "%B" %}
     {% case m %}
       {% when 'January' or 'February' %}Winter
@@ -17,8 +18,8 @@ title: Launch Countdown
       {% when 'October' %}Fall
       {% when 'November' or 'December' %}Winter
       {% endcase %}
-    {{ site.data.launch.launch | date: '%Y'}}</h1>
-  <h2 class="warning">Launch Date TBD</h2>
+    {{ site.data.launch.launch | date: '%Y'}}</h2>
+  <h4 class="warning">Launch Date TBD</h4>
   <div id="countdown">
     <span id="launch" class="count-decoration">L</span><span id="minus" class="count-decoration">&minus;</span><span>?</span>
   </div>
@@ -35,6 +36,12 @@ title: Launch Countdown
 {% endif %}
 </div>
 
-Next PSAS launch: <a href="{{ site.data.launch.link }}">{{ site.data.launch.name }}</a>
+The next launch is designated <a href="{{ site.data.launch.link }}">{{ site.data.launch.name }}</a>.
 
 [Countdown API Documentation](docs)
+
+
+--------------------------------------
+
+
+Last Updated: {{ site.time | date: "%B %-d, %Y" }}
