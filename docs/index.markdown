@@ -8,7 +8,7 @@ description: "How to use the PSAS launch countdown API"
 ## JSON Endpoint:
 
 <div class="code" markdown="1">
-  <https://psas.pdx.edu/countdown/countdown.json>
+  <http://psas.pdx.edu/countdown/countdown.json>
 </div>
 
 ## Fields:
