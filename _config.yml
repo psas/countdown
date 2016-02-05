@@ -19,6 +19,7 @@ owner:
 exclude: ['Makefile', 'README.markdown', 'LICENSE']
 timezone:    America/Los_Angeles
 markdown:    kramdown
+highlighter: rouge
 kramdown: 
   toc_levels: "2,3"
 

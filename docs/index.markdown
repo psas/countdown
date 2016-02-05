@@ -25,24 +25,27 @@ description: "How to use the PSAS launch countdown API"
 
 **Example request:**
 
-    GET /countdown/countdown.json HTTP/1.1
-    Host: psas.pdx.edu
-    Accept: application/json, text/javascript
-
+{% highlight HTTP %}
+GET /countdown/countdown.json HTTP/1.1
+Host: psas.pdx.edu
+Accept: application/json, text/javascript
+{% endhighlight %}
 
 **Example response:**
 
-    HTTP/1.1 200 OK
-    Access-Control-Allow-Origin:*
-    Content-Type:application/json
+{% highlight HTTP %}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin:*
+Content-Type:application/json
 
-    {
-        "launch": 1464800400,
-        "certainty": "TBD",
-        "name": "Launch-13",
-        "link": "https://github.com/psas/Launch-13",
-        "patch": ""
-    }
+{
+    "launch": 1464800400,
+    "certainty": "TBD",
+    "name": "Launch-13",
+    "link": "https://github.com/psas/Launch-13",
+    "patch": ""
+}
+{% endhighlight %}
 
 
 [1]: https://en.wikipedia.org/wiki/Unix_time
