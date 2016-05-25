@@ -26,6 +26,8 @@ description: "Time until our next rocket launch:"
 {% elsif site.data.launch.certainty == "NET" %}
   <h3>No Earlier Than:</h3>
   <h1>{{ site.data.launch.launch | date: "%A, %B %-d, %Y" }}</h1>
+  <p>A "No Earlier Than" date is not fixed. The launch may slip to a later date.</p>
+
 {% elsif site.data.launch.certainty == "Date" %}
   <h1>Morning of {{ site.data.launch.launch | date: "%A, %B %-d, %Y" }}</h1>
   <div id="countdown">
