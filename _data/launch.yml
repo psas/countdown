@@ -1,5 +1,5 @@
-launch: 2018-4-22T17:00:00
-certainty: Date
-name: Launch-13
-link: https://github.com/psas/Launch-13
-patch: https://camo.githubusercontent.com/f84f18f877e918774fb3dca0257a29a0195c6f8f/687474703a2f2f707361732e6769746875622e696f2f4c61756e63682d31332f70617463682f4c31335f70617463682e737667
+launch: 2020-4-26T14:00:00
+certainty: NET
+name: Launch-14
+link: https://github.com/psas/Launch-14
+patch: https://raw.githubusercontent.com/psas/Launch-14/dev_joe/patch/L-14_patch.svg
